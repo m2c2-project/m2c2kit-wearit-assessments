@@ -17,5 +17,11 @@
     "rollup-plugin-serve": "2.0.2"
   },
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@m2c2kit/addons": "0.3.9",
+    "@m2c2kit/assessment-color-dots": "0.8.10",
+    "@m2c2kit/core": "0.3.11",
+    "@m2c2kit/embedding": "1.0.6"
+  }
 }
