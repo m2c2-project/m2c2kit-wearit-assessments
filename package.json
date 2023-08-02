@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm run clean && npm run build-assessments && npm run copy-assessments",
     "build-assessments": "concurrently \"npm run build -w packages/assessment-symbol-search-wearit\" \"npm run build -w packages/assessment-color-dots-wearit\" \"npm run build -w packages/assessment-grid-memory-wearit\" \"npm run build -w packages/assessment-color-shapes-wearit\"",
-    "copy-assessments": "cpy packages/assessment-symbol-search-wearit/dist/** dist/assessments/symbol-search && cpy packages/assessment-color-dots-wearit/dist/** dist/assessments/color-dots && cpy packages/assessment-grid-memory-wearit/dist/** dist/assessments/grid-memory && cpy packages/assessment-color-shapes-wearit/dist/** dist/assessments/color-shapes",
+    "copy-assessments": "cpy . ../../../dist/assessments/color-dots --cwd=packages/assessment-color-dots-wearit/dist && cpy . ../../../dist/assessments/color-shapes --cwd=packages/assessment-color-shapes-wearit/dist && cpy . ../../../dist/assessments/grid-memory --cwd=packages/assessment-grid-memory-wearit/dist && cpy . ../../../dist/assessments/symbol-search --cwd=packages/assessment-symbol-search-wearit/dist",
     "clean": "rimraf dist",
     "prepare": "husky install"
   },
@@ -17,7 +17,7 @@
     "@typescript-eslint/eslint-plugin": "^6.2.1",
     "@typescript-eslint/parser": "^6.2.1",
     "concurrently": "8.2.0",
-    "cpy-cli": "5.0.0",
+    "cpy-cli": "4.2.0",
     "eslint": "^8.46.0",
     "eslint-config-prettier": "^8.9.0",
     "husky": "^8.0.3",
