@@ -1,0 +1,21 @@
+{
+  "name": "assessment-color-shapes-wearit",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c --configProd",
+    "serve": "rollup -c --configServe --watch"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "15.1.0",
+    "esbuild": "0.18.17",
+    "rollup": "3.27.0",
+    "rollup-plugin-copy": "3.4.0",
+    "rollup-plugin-esbuild": "5.0.0",
+    "rollup-plugin-livereload": "2.0.5",
+    "rollup-plugin-serve": "2.0.2"
+  },
+  "author": "",
+  "license": "MIT"
+}

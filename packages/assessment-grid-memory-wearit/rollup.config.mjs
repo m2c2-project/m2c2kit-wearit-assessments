@@ -36,8 +36,8 @@ export default (commandLineArgs) => {
               dest: outputFolder,
             },
             {
-              src: "../../node_modules/@m2c2kit/assessment-color-dots/assets/*",
-              dest: `${outputFolder}/assets/color-dots`,
+              src: "../../node_modules/@m2c2kit/assessment-grid-memory/assets/*",
+              dest: `${outputFolder}/assets/grid-memory`,
             },
           ],
         }),
